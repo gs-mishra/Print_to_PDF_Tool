@@ -25,10 +25,11 @@ jobs:
           cache-disabled: true
 
       - name: Decode Keystore
-        run: echo "${{ secrets.SIGNING_KEY_BASE64 }}" | base64 -d > my-upload-key.jks
+        run: echo "${{ secrets.SIGNING_KEY_BASE64 }}" | base64 -d > "${{ github.workspace }}/my-upload-key.jks"
 
       - name: Build Signed Release APK
         env:
+          KEYSTORE_PATH: ${{ github.workspace }}/my-upload-key.jks
           STORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
           KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
           KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
@@ -38,4 +39,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Signed-Release-APK
-          path: app/build/outputs/apk/release/app-release.apk
+          path: "**/app/build/outputs/apk/release/app-release.apk"
