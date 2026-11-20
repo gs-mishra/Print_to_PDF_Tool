@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Save as PDF</string>
+    <string name="printer_name">Save as PDF</string>
+    <string name="printer_description">600 DPI lossless vector PDF</string>
+    <string name="resolution_600_dpi_label">600 DPI</string>
+    <string name="btn_open_print_settings">Open Print Settings</string>
+    <string name="btn_print_test_page">Test Print</string>
+    <string name="section_preferences">Settings</string>
+    <string name="ask_location_title">Ask where to save</string>
+    <string name="ask_location_desc_on">Choose folder in File Manager on every print</string>
+    <string name="ask_location_desc_off">Save directly to Downloads folder</string>
+    <string name="default_paper_title">Default paper size</string>
+    <string name="dialog_paper_size_title">Default paper size</string>
+    <string name="action_close">Close</string>
+    <string name="pending_save_banner_title">Pending PDF waiting to save</string>
+    <string name="pending_save_banner_action">Save now</string>
+    <string name="series_iso_a">ISO A</string>
+    <string name="series_iso_bc">ISO B &amp; C</string>
+    <string name="series_na">US / ANSI</string>
+    <string name="series_photo">Photo &amp; Card</string>
+    <string name="footer_developed_by">Developed by GS Mishra</string>
+    <string name="snackbar_default_media_updated">Default paper size: %1$s</string>
+    <string name="snackbar_save_mode_ask">File Manager will open on every print</string>
+    <string name="snackbar_save_mode_downloads">PDFs will save directly to Downloads</string>
+    <string name="snackbar_print_settings_error">Unable to open Print Settings</string>
+    <string name="snackbar_job_saved">Saved %1$s</string>
+    <string name="snackbar_job_cancelled">Save cancelled</string>
+    <string name="toast_saved_pdf">Saved %1$s</string>
+    <string name="error_no_document_data">No PDF data received from print spooler</string>
+    <string name="error_save_failed">Could not save PDF: %1$s</string>
+    <string name="test_job_name">SaveAsPDF_Test</string>
+</resources>
