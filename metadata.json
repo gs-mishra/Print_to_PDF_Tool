@@ -1,6 +1,0 @@
-{
-  "name": "Save as PDF",
-  "description": "Native Android PrintService registering a 600 DPI virtual printer that saves lossless vector PDFs directly to MediaStore.Downloads without storage permissions.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
